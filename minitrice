@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#echo "Entrez une expression (ou appuyez sur Entrée pour terminer) :"
+while true; do
+    read -p "> " expression
+    if [ -z "$expression" ]; then
+        echo "Fin des calculs :)"
+        exit 0
+    fi
+    resultat=$(python minitrice.py "$expression")
+    echo "$resultat"
+done
+

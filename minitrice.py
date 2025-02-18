@@ -1,17 +1,10 @@
 def calculer(expression):
     try:
-        # Supprimer les espaces éventuels autour des opérateurs
-        expression = expression.replace(" ", "")
-
-        # Trouver l'opérateur dans l'expression
+        expression = expression.replace(' ', '')
         for op in ['+', '-', '*', '/']:
             if op in expression:
-                # Diviser l'expression en deux nombres
                 num1, num2 = expression.split(op)
-                # Convertir les nombres en flottants
                 num1, num2 = float(num1), float(num2)
-
-                # Effectuer le calcul en fonction de l'opérateur
                 if op == '+':
                     resultat = num1 + num2
                 elif op == '-':
@@ -22,15 +15,23 @@ def calculer(expression):
                     if num2 != 0:
                         resultat = num1 / num2
                     else:
-                        return "Erreur : Division par zéro."
+                        return 'Erreur : Division par zero.'
 
-                return f"Le résultat de {expression} est {resultat}"
+                # Convertir en entier si le résultat est un nombre entier
+                if resultat.is_integer():
+                    return int(resultat)
+                else:
+                    return resultat
 
-        return "Erreur : Opérateur non valide."
-
+        return 'Erreur : Opérateur non valide.'
     except ValueError:
-        return "Erreur : Entrée invalide. Assurez-vous d'entrer deux nombres séparés par un opérateur."
+        return 'Erreur : Entrée invalide. Assurez-vous d\'entrer deux nombres séparés par un opérateur.'
 
-# Exemple d'utilisation
-expression = input("Entrez une expression (ex: 3+4) : ")
-print(calculer(expression))
+if __name__ == "__main__":
+    import sys
+    if len(sys.argv) == 2:
+        expression = sys.argv[1]
+        resultat = calculer(expression)
+        print(resultat)
+    else:
+        print("Usage: ./calculatrice.py 'expression'")
