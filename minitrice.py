@@ -1,3 +1,5 @@
+import sys
+
 def calculer(expression):
     try:
         expression = expression.replace(' ', '')
@@ -28,10 +30,13 @@ def calculer(expression):
         return 'Erreur : Entrée invalide. Assurez-vous d\'entrer deux nombres séparés par un opérateur.'
 
 if __name__ == "__main__":
-    import sys
-    if len(sys.argv) == 2:
+    if len(sys.argv) > 1:
         expression = sys.argv[1]
-        resultat = calculer(expression)
-        print(resultat)
+        print(calculer(expression))
     else:
-        print("Usage: ./calculatrice.py 'expression'")
+        while True:
+            expression = input("> ")
+            if not expression:
+                print("Fin des calculs :)")
+                break
+            print(calculer(expression))
