@@ -30,13 +30,16 @@ def calculer(expression):
         return 'Erreur : Entrée invalide. Assurez-vous d\'entrer deux nombres séparés par un opérateur.'
 
 if __name__ == "__main__":
+    # Si on a une entrée
     if len(sys.argv) > 1:
         expression = sys.argv[1]
         print(calculer(expression))
+    #Sinon on lance un mode interractif avec des input
     else:
-        while True:
-            expression = input("> ")
-            if not expression:
-                print("Fin des calculs :)")
-                break
-            print(calculer(expression))
+        #On implémente le EOF avec ctrl+D
+        try:
+            while True:
+                expression = input("> ")
+                print(calculer(expression))
+        except EOFError:
+            print("\nFin des calculs :)")
