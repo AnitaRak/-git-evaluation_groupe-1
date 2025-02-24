@@ -77,7 +77,7 @@ Voici quelques ressources utiles pour ce projet :
     - mini calculatrice minitrice.py + - * / :
     - gestion des erreurs : après, suite de minitrice.py
 
-- ASMAHANI Saroumaia:
+- ASMAHANI SAROUMAIA:
     - rédiger le fichier README.md
     - test & results : créer un fichier result qui affiche les resultats des tests des fichiers tests
 
