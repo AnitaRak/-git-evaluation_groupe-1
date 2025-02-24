@@ -69,7 +69,7 @@ Voici quelques ressources utiles pour ce projet :
 - [Pipeline (Unix)](https://en.wikipedia.org/wiki/Pipeline_(Unix)) - Fonctionnement du pipe en Unix.
 - [Pipe: How the System Call That Ties Unix Together Came About](https://thenewstack.io/pipe-how-the-system-call-that-ties-unix-together-came-about/) - Histoire de la création du pipe en Unix.
 
----
+--
 
 **Projet réalisé par :**
 
