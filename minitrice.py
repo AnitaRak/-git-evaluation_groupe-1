@@ -34,6 +34,14 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         expression = sys.argv[1]
         print(calculer(expression))
+
+    # Sinon si on est en mode pipe
+    elif not sys.stdin.isatty():
+        # Mode pipe avec isatty
+        input_data = sys.stdin.read().strip().splitlines()  # Lire chaque ligne
+        for line in input_data:
+            print(calculer(line.strip()))
+            
     #Sinon on lance un mode interractif avec des input
     else:
         #On implémente le EOF avec ctrl+D
