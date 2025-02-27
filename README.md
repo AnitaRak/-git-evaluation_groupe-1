@@ -56,20 +56,14 @@ Un script `test_runner.sh` est fourni pour exécuter les tests automatiquement e
 ```
 Les résultats seront stockés dans le répertoire `results/`.
 
+Un script `runTest.sh` est fourni pour rajouter 1000 opérations à partir de generator.py dans le fichier operations.txt
+```bash
+./runTest.sh
+```
+
 ## 📽️ Publication
 Une vidéo générée par l'outil [gource](https://gource.io/) illustrant l'historique des contributions Git sera publiée sur YouTube.
 
-## 🔗 Liens utiles
-Voici quelques ressources utiles pour ce projet :
-- [Organisation du développement collaboratif](https://slides.com/frozar/git) - Support de cours pour Git/GitHub.
-- [How to capture Control+D signal?](https://stackoverflow.com/questions/1516122/how-to-capture-controld-signal) - Interception du signal `End Of File`.
-- [Find out if there is input from a pipe or not in Python?](https://stackoverflow.com/questions/33871836/find-out-if-there-is-input-from-a-pipe-or-not-in-python) - Détection de l'utilisation d'un pipe en Python.
-- [My Gource video production pipeline](https://dev.to/voieducode/my-gource-video-production-pipeline-5eb0) - Exemples d'utilisation de gource.
-- [Philosophie d'Unix](https://fr.wikipedia.org/wiki/Philosophie_d%27Unix) - Principes fondamentaux d'Unix.
-- [Pipeline (Unix)](https://en.wikipedia.org/wiki/Pipeline_(Unix)) - Fonctionnement du pipe en Unix.
-- [Pipe: How the System Call That Ties Unix Together Came About](https://thenewstack.io/pipe-how-the-system-call-that-ties-unix-together-came-about/) - Histoire de la création du pipe en Unix.
-
---
 
 **Projet réalisé par :**
 
