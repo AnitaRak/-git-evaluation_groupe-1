@@ -64,6 +64,8 @@ Un script `runTest.sh` est fourni pour rajouter 1000 opérations à partir de ge
 ## 📽️ Publication
 Une vidéo générée par l'outil [gource](https://gource.io/) illustrant l'historique des contributions Git sera publiée sur YouTube.
 
+La vidéo sera disponible via le lien : [git-evaluation](https://youtu.be/5NhsZ-WpwPI)
+
 
 **Projet réalisé par :**
 
